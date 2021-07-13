@@ -14,6 +14,7 @@ module.exports = function(DataHelpers) {
       } else {
         res.json(tweets);
       }
+      console.log("test")
     });
   });
 
