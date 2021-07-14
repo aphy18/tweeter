@@ -9,6 +9,8 @@ the same background colour as the <body> element */
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+
 html {
   box-sizing: border-box;
 }
@@ -25,15 +27,81 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Bungee', sans-serif;
+  
+  
 }
 
 main {
   font-family: 'Source+Sans+Pro:wght@300', sans-serif;
   display: flex;
   justify-content: center;
-  background-color: #f4f1ec;
   width: 90%;
+  height: 900px;
+  position: relative;
+  margin-left: 5%;
+  
 }
+
+.tweets {
+  width: 90%;
+  height: 200px;
+  border: 3px solid grey;
+  position: absolute;
+  top: 30%;
+  background-color: #f4f1ec;
+  box-shadow: 8px 10px 2px rgb(84, 161, 233)
+ 
+
+}
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  width: 400px;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.right {
+  display: flex;
+  width: 550px;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 5px 10px;
+}
+
+.left,
+.right {
+  font-family: "Source+Sans+Pro:wght300", sans-serif;
+}
+
+.person-img {
+  margin: 5px;
+}
+
+.person-name {
+  margin: 5px;
+}
+
+.footer-format {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px;
+}
+
+.sentence {
+  transform:translateX(2%);
+}
+
+.fas:hover {
+  color: goldenrod;
+  transition: color 1.2s ease;
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

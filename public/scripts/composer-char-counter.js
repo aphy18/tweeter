@@ -15,7 +15,6 @@ $(document).ready(function() {
         let newCount = 140 - textCount.length; 
         $(".counter").val(newCount);
         
-
         if(newCount < 0) {
             $(".counter").css({color: "#ff0000"});
         } else {

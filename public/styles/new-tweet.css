@@ -32,7 +32,16 @@ form {
     margin-top: 8px;
 }
 
+.tweet-button:hover{
+    transition: background-color 0.3s ease;
+    transition: transform 0.5s ease;
+    background-color: red;
+    transform: scale(1.2,1.2);
+}
+
 .border-bottom {
     border-bottom: 5px solid grey;
-    width: 100%;
+    width: 95%;
+    margin-left: 2.5%;
+    
 }
