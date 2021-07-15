@@ -1,16 +1,17 @@
 $(document).ready(function() {
     console.log("loaded");
-    $("#tweet-form").on("submit", (event) => {
-    event.preventDefault();
-    console.log("prevent default")
-    });
-    // $(".tweet-text").keyup(function() { 
-    // console.log( "Handler for .keyup() called." ); 
+    // $("#tweet-form").on("submit", (event) => {
+    // event.preventDefault();
+    // console.log("prevent default")
     // });
-    $(".tweet-button").on("click",function() {
-    console.log(this)
-    })
+    // // $(".tweet-text").keyup(function() { 
+    // // console.log( "Handler for .keyup() called." ); 
+    // // });
+    // $(".tweet-button").on("click",function() {
+    // console.log(this)
+    // })
     $(".tweet-text").on("input",function() {
+        $(".error-message").slideUp(500);
         let textCount = $(this).val(); //capturing all characters in the textarea
         let newCount = 140 - textCount.length; 
         $(".counter").val(newCount);

@@ -2,6 +2,12 @@ form {
     width: 75vw;;
 }
 
+.error-message {
+    display: none;
+    background-color: red;
+    width: 500px;
+}
+
 .insert-tweet {
     margin-bottom: 10px;
     position: relative;
